@@ -1,0 +1,9 @@
+body {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+}
+
+.page-card {
+  max-width: 480px;
+  margin: 0 auto;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проект | TeamTasks</title>
+  </head>
+  <body>
+    <header id="app-header"></header>
+
+    <main class="container py-4">
+      <a href="/projects.html" class="btn btn-outline-secondary btn-sm mb-3">
+        ← Към проектите
+      </a>
+
+      <h1 class="h3 mb-3" id="project-title">Моят първи проект</h1>
+      <p class="text-muted" id="project-description">
+        Тук ще се показват подробностите за проекта.
+      </p>
+
+      <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
+        <h2 class="h5 mb-0">Задачи</h2>
+        <a class="btn btn-primary btn-sm" href="/task.html">+ Нова задача</a>
+      </div>
+
+      <div class="list-group" id="tasks-list">
+        <div class="list-group-item">Примерна задача</div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/pages/project.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача | TeamTasks</title>
+  </head>
+  <body>
+    <header id="app-header"></header>
+
+    <main class="container py-4">
+      <a href="/project.html" class="btn btn-outline-secondary btn-sm mb-3">
+        ← Към проекта
+      </a>
+
+      <div class="card shadow-sm page-card">
+        <div class="card-body p-4">
+          <h1 class="h3 mb-4">Нова задача</h1>
+
+          <form id="task-form">
+            <div class="mb-3">
+              <label for="title" class="form-label">Заглавие</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                name="title"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="description" class="form-label">Описание</label>
+              <textarea
+                class="form-control"
+                id="description"
+                name="description"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="status" class="form-label">Статус</label>
+              <select class="form-select" id="status" name="status">
+                <option value="todo">За изпълнение</option>
+                <option value="in_progress">В процес</option>
+                <option value="done">Готова</option>
+              </select>
+            </div>
+<div class="mb-3">
+  <label for="task-files" class="form-label">Прикачи файлове</label>
+  <input
+    type="file"
+    class="form-control"
+    id="task-files"
+    name="task-files"
+    multiple
+  />
+  <div class="form-text">Можеш да избереш повече от един файл.</div>
+</div>
+
+            <button type="submit" class="btn btn-primary">Запази</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/pages/task.js"></script>
+  </body>
+</html>
