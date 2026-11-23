@@ -7,7 +7,8 @@ const projectId = new URLSearchParams(window.location.search).get('id');
 const title = document.querySelector('#project-title');
 const description = document.querySelector('#project-description');
 const tasksList = document.querySelector('#tasks-list');
-const newTaskLink = document.querySelector('a[href="/task.html"]');
+const newTaskLink = document.querySelector('a[href$="task.html"]');
+
 
 if (newTaskLink && projectId) {
   newTaskLink.href = `/task.html?project_id=${encodeURIComponent(projectId)}`;
